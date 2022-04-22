@@ -2,10 +2,12 @@
   <div class="con wp">
     <p class="title">当前位置:<i @click="$router.push({path:'/home'})">首页</i>>新闻详情</p>
     <div>
-      <h3 class="biaoti">{{infoList.newsTitle}}</h3>
-      <h3 class="creattime">{{filters1.formatTimer(infoList.createDate)}}</h3>
-      <div v-html="infoList.newsContent"></div>
-      <van-button type="info" @click="$router.back()" style="width: 100%; margin-top: 30px;border-radius: 20px;background-color: #78c3ae; border-color: #78c3ae;">返回</van-button>
+      <h3 class="biaoti">{{ infoList.newsTitle }}</h3>
+      <h3 class="creattime">{{ filters1.formatTimer(infoList.createDate) }}</h3>
+      <div class="boxCenter" v-html="infoList.newsContent"></div>
+      <van-button type="info" @click="$router.back()" style="width: 100%; margin-top: 30px;border-radius: 20px;background-color: #78c3ae; border-color: #78c3ae;">
+        返回
+      </van-button>
     </div>
   </div>
 </template>
@@ -17,7 +19,7 @@ export default {
   name: "newsInfo",
   data() {
     return {
-      infoList:{},
+      infoList: {},
       filters1: {
         formatTimer: (value) => {
           let date = new Date(value);
@@ -25,15 +27,15 @@ export default {
           let MM = date.getMonth() + 1;
           MM = MM < 10 ? "0" + MM : MM;
           let d = date.getDay();
-          d = d < 10 ? "0" + d :d
+          d = d < 10 ? "0" + d : d
           return y + "-" + MM + '-' + d;
         }
       },
     }
   },
-  methods:{
+  methods: {
     async loadNewsInfo() {
-      const res = await  reqNewsInfo(this.$route.query.id)
+      const res = await reqNewsInfo(this.$route.query.id)
       this.infoList = res.data
       console.log(res)
     }
@@ -45,9 +47,10 @@ export default {
 </script>
 
 <style scoped lang="less">
-.con{
+.con {
   padding: 0.533rem;
 }
+
 .title {
   width: 357px;
   height: 0.4rem;
@@ -56,13 +59,21 @@ export default {
   line-height: 0.4rem;
   margin-bottom: 0.533rem;
 }
-.biaoti{
+
+.biaoti {
   margin-bottom: 0.267rem;
   font-size: 0.427rem;
 }
-.creattime{
+
+.creattime {
   font-size: 0.213rem;
   margin-bottom: 0.2rem;
   color: #848484;
+}
+.boxCenter{
+   /deep/ img{
+     width: 100% !important;
+     height: 100% !important;
+    }
 }
 </style>

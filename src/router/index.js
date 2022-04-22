@@ -38,7 +38,7 @@ const routes = [
         component: () => import('@/views/home/home'),
         meta: {
             bannerShow: false,
-            title: "鹿邑心脑血管"
+            title: "鹿邑心脑血管医院"
         }
     },
     // 关于我们
@@ -48,7 +48,7 @@ const routes = [
         component: () => import('@/views/aboutme/aboutme'),
         meta: {
             bannerShow: true,
-            title: "关于我们-鹿邑心脑血管"
+            title: "关于我们-鹿邑心脑血管医院"
         }
     },
     // 医生风采
@@ -58,7 +58,7 @@ const routes = [
         component: () => import('@/views/expertsstyle/expertsstyle'),
         meta: {
             bannerShow: true,
-            title: "医生风采-鹿邑心脑血管"
+            title: "医生风采-鹿邑心脑血管医院"
         }
     },
     // 医生详情
@@ -68,7 +68,7 @@ const routes = [
         component: () => import('@/views/expertsstyle/doctorInfo/doctorInfo'),
         meta: {
             bannerShow: true,
-            title: "医生详情-鹿邑心脑血管"
+            title: "医生详情-鹿邑心脑血管医院"
         }
     },
     // 医疗设备
@@ -78,7 +78,7 @@ const routes = [
         component: () => import('@/views/armarium/armarium'),
         meta: {
             bannerShow: true,
-            title: "医疗设备-鹿邑心脑血管"
+            title: "医疗设备-鹿邑心脑血管医院"
         }
     },
     // 新闻中心
@@ -88,7 +88,7 @@ const routes = [
         component: () => import('@/views/news/news'),
         meta: {
             bannerShow: true,
-            title: "新闻中心-鹿邑心脑血管"
+            title: "新闻中心-鹿邑心脑血管医院"
         }
     },
     // 新闻详情
@@ -98,7 +98,7 @@ const routes = [
         component: () => import('@/views/news/newsInfo/newsInfo'),
         meta: {
             bannerShow: true,
-            title: "新闻详情-鹿邑心脑血管"
+            title: "新闻详情-鹿邑心脑血管医院"
         }
     },
     // 就诊指南
@@ -108,7 +108,7 @@ const routes = [
         component: () => import('@/views/consultation/consultation'),
         meta: {
             bannerShow: true,
-            title: "就诊指南-鹿邑心脑血管"
+            title: "就诊指南-鹿邑心脑血管医院"
         }
     },
     // 科室风采
@@ -118,7 +118,7 @@ const routes = [
         component: () => import('@/views/departmentstyle/departmentstyle'),
         meta: {
             bannerShow: true,
-            title: "科室风采-鹿邑心脑血管"
+            title: "科室风采-鹿邑心脑血管医院"
         }
     },
     // 科室详情
@@ -128,7 +128,7 @@ const routes = [
         component: () => import('@/views/departmentstyle/departmentInfo/departmentInfo'),
         meta: {
             bannerShow: true,
-            title: "科室详情-鹿邑心脑血管"
+            title: "科室详情-鹿邑心脑血管医院"
         }
     },
     // 联系我们
@@ -138,7 +138,7 @@ const routes = [
         component: () => import('@/views/contactme/contactme'),
         meta: {
             bannerShow: true,
-            title: "联系我们-鹿邑心脑血管"
+            title: "联系我们-鹿邑心脑血管医院"
         }
     },
 
